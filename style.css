@@ -1,0 +1,739 @@
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Permite deslizar cuando hago clic en los links del menu, y que haga una animacion cuando se deslize para abajo */
+  scroll-behavior: smooth;
+}
+
+/* Menu Encabezado */
+.contenedor-header {
+  background: #1e2326;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.contenedor-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.contenedor-header header .logo a {
+  font-family: "Righteous";
+  font-size: 36px;
+  color: #1cb643;
+  text-decoration: none;
+}
+
+.contenedor-header header ul {
+  display: flex;
+  list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+  color: #1cb643;
+}
+
+.nav-responsive {
+  background-color: #1cb643;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Seccion Inicio */
+.inicio {
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 1)
+    ),
+    url(./img/UnidadInterceptor.png);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.inicio .contenido-banner {
+  padding: 20px;
+  background-color: #1e2326;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.inicio .contenido-banner img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 10px solid #1cb643;
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 100%;
+}
+
+.inicio .contenido-banner h1 {
+  margin-top: 40px;
+  font-size: 42px;
+  font-family: "Righteous";
+}
+
+.inicio .contenido-banner h2 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* Seccio Introduccion */
+.introduccion {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.introduccion .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.introduccion h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+
+.introduccion .contenido-seccion p {
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.introduccion .fila {
+  text-align: center;
+  height: 100%;
+  display: block;
+}
+
+.introduccion .fila .col .contenedor-intereses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.introduccion .fila .col .contenedor-intereses .interes {
+  width: 150px;
+  height: 150px;
+  background-color: #252a2e;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.introduccion .fila .col .contenedor-intereses .interes:hover {
+  background-color: #1cb643;
+}
+
+.introduccion .fila .col .contenedor-intereses .interes i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.introduccion button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.introduccion a {
+  all: unset;
+  display: inline-block;
+}
+
+.introduccion {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.introduccion button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1cb643;
+  z-index: -1;
+  transition: 1s;
+}
+
+.introduccion button:hover .overlay {
+  width: 100%;
+}
+
+/* Seccion funciones */
+.proyectos {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.proyectos .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.proyectos h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+
+.proyectos .imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.proyectos .imagenes .proyecto {
+  position: relative;
+  max-width: 350px;
+  height: 100%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.proyectos .imagenes .proyecto img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.proyectos .imagenes .proyecto .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(28, 182, 67, 0.8), rgba(28, 182, 67, 0.8));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+.proyectos .imagenes .proyecto .overlay h3 {
+  margin-bottom: 20px;
+  transition: 1s;
+  color: #fff;
+}
+
+.proyectos .imagenes .proyecto a {
+  all: unset;
+}
+
+.proyectos .imagenes .proyecto .overlay:hover {
+  opacity: 1;
+}
+
+.proyectos .imagenes .proyecto .overlay:hover h3 {
+  margin-bottom: 0px;
+}
+
+.ventana {
+  background: linear-gradient(
+    to top,
+    rgba(30, 35, 38, 0.8),
+    rgba(30, 35, 38, 1)
+  );
+  width: 100vw;
+  height: calc(100% - 75px);
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 33px;
+  border-radius: 22px;
+  position: fixed;
+  z-index: 50;
+  bottom: 0px;
+  display: none;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.ventana p {
+  text-align: justify;
+  width: 50%;
+}
+
+.ventana p .transversal1 {
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 30px;
+  height: 364px;
+  width: 30%;
+}
+
+.ventana p .video1 {
+  margin-top: 73px;
+  margin-left: 100px;
+  width: 560px;
+  height: 315px;
+}
+
+.ventana p .word {
+  position: absolute;
+  margin-left: 230px;
+  margin-top: 110px;
+}
+
+.ventana p .powerpoint {
+  position: absolute;
+  margin-left: 650px;
+  margin-top: 110px;
+}
+
+.ventana p .red {
+  position: absolute;
+  width: 780px;
+  margin-left: 30%;
+  margin-top: 50px;
+}
+
+.ventana p .video2 {
+  margin-top: -800px;
+  margin-left: 955px;
+  width: 800px;
+  height: 452px;
+}
+
+.ventana p .word1 img {
+  position: absolute;
+  margin-left: 1192px;
+  margin-top: -737px;
+  height: 287px;
+}
+
+.ventana p .robot1 {
+  position: absolute;
+  margin-left: 351px;
+  margin-top: 50px;
+  height: 398px;
+  width: 30%;
+}
+
+#cerrar {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  top: 10px;
+  left: 93%;
+}
+
+/* Seccion Jerarquia */
+
+.slider- {
+  display: flex;
+  gap: 10px;
+  background-color: #1e2326;
+}
+
+.sliderPunto {
+  margin-top: 5%;
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.sliderPunto:nth-child(1) {
+  margin-left: 45%;
+}
+
+.sliderPunto:last-child {
+  display: none;
+}
+
+.slider- .sliderPunto.activo {
+  background-color: white;
+  border: none;
+}
+
+.jerarquia {
+  color: white;
+  background-color: #1e2326;
+  width: 100%;
+}
+
+.jerarquia h1 {
+  color: white;
+  background-color: #1e2326;
+  width: 100%;
+}
+
+/* Estilos para los botones de flecha */
+.boton-izquierda,
+.boton-derecha {
+  position: absolute;
+  top: 325%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.boton-izquierda {
+  left: 10px;
+}
+
+.boton-derecha {
+  right: 10px;
+}
+
+.contenedor {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-contenedor {
+  width: 100%;
+  display: flex;
+}
+
+.contenido-slider {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.contenido-slider:nth-child(1) {
+  font-size: 20px;
+  background: #1e2326;
+  color: #fff;
+}
+
+.contenido-slider:nth-child(2) {
+  font-size: 20px;
+  background: #1e2326;
+  color: #fff;
+}
+
+.contenido-slider:nth-child(3) {
+  font-size: 20px;
+  background: #1e2326;
+  color: #fff;
+}
+
+.contenido-slider:nth-child(4) {
+  font-size: 20px;
+  background: #1e2326;
+  color: #fff;
+}
+
+.contenido-slider:nth-child(5) {
+  font-size: 20px;
+  background: #1e2326;
+  color: #fff;
+}
+
+.contenido-slider > section {
+  width: 40%;
+}
+
+.contenido-slider h4 {
+  font-size: 48px;
+  font-weight: 300;
+  text-align: justify;
+  font-family: "Righteous";
+  line-height: 30px;
+}
+
+.piloto {
+  color: yellow;
+  background-color: #1e2326;
+}
+
+/* Seccion Requisitos */
+.requisitos {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.requisitos2 {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.requisitos .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.requisitos h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+}
+
+.requisitos .fila {
+  display: flex;
+  justify-content: space-between;
+}
+
+.requisitos .fila .col {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.requisitos .fila .col h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+}
+
+.requisitos .fila .izquierda {
+  border-right: 2px solid #1e2326;
+}
+
+.requisitos .fila .derecha {
+  border-left: 2px solid #252a2e;
+}
+
+.requisitos .fila .item {
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: #1e2326;
+  position: relative;
+}
+
+.requisitos2 .fila .item {
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: #252a2e;
+  position: relative;
+}
+
+.requisitos .fila .item .der {
+  margin-top: 20px;
+}
+
+.requisitos .fila .item h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.requisitos .fila .item .casa {
+  color: #1cb643;
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+}
+
+.requisitos .fila .item .fecha {
+  display: block;
+  color: #1cb643;
+  margin-bottom: 10px;
+}
+
+.requisitos .fila .item p {
+  line-height: 24px;
+}
+
+.requisitos .fila .izq {
+  border-right: 2px solid #1cb643;
+  margin-right: 40px;
+}
+
+.requisitos .fila .der {
+  border-left: 2px solid #1cb643;
+  margin-left: 40px;
+}
+
+.requisitos .fila .item .conectori {
+  height: 2px;
+  background-color: #1cb643;
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  right: -47px;
+  z-index: 5;
+}
+
+.requisitos .fila .item .conectori .circuloi {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #1cb643;
+  float: right;
+  position: relative;
+  bottom: 4px;
+}
+
+.requisitos .fila .item .conectord {
+  height: 2px;
+  background-color: #1cb643;
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  left: -47px;
+  z-index: 5;
+}
+
+.requisitos .fila .item .conectord .circulod {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #1cb643;
+  float: left;
+  position: relative;
+  bottom: 4px;
+}
+
+.requisitos button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.requisitos a {
+  all: unset;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+footer .redes {
+  margin-bottom: 20px;
+}
+
+footer .redes a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+footer .arriba {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #1cb643;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+/* Seccion Responsive */
+@media screen and (max-width: 980px) {
+  nav {
+    display: none;
+  }
+  .nav-responsive {
+    display: block;
+  }
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #1e2326;
+    width: 180px;
+  }
+  nav.responsive ul {
+    display: block !important;
+  }
+  nav.responsive ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
+  .contenido-slider > div {
+    width: 40%;
+  }
+  .contenido-slider h4 {
+    font-size: 23px;
+  }
+}
