@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Metropolitan Patrol Department</title>
+  </head>
+  <body>
+    <!-- Menu Encabezado -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">MPD</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="#inicio" onclick="sleccionar()">Inicio</a>
+            </li>
+            <li>
+              <a href="#introduccion" onclick="sleccionar()">Introduccion</a>
+            </li>
+            <li>
+              <a href="#funciones" onclick="sleccionar()">Funciones</a>
+            </li>
+            <li>
+              <a href="#jerarquia" onclick="sleccionar()">Jerarquia</a>
+            </li>
+            <li>
+              <a href="#requisitos" onclick="sleccionar()">Requisitos</a>
+            </li>
+            <li>
+              <a href="#normativa" onclick="sleccionar()">Normativa</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!-- Seccion Inicio -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="./img/UnidadInterceptor.png" alt="" />
+        </div>
+        <h1>Metropolitan Patrol Department</h1>
+        <br />
+        <h2>Unidad Interceptor</h2>
+      </div>
+    </section>
+
+    <!-- Seccion Introduccion -->
+
+    <section id="introduccion" class="introduccion">
+      <div class="contenido-seccion">
+        <h2>Introduccion de que es el Metropolitan Patrol Department</h2>
+        <p>
+          La Metropolitan Patrol Department (San Andreas HighWay Patrol) se
+          establece para ayudar a los Sheriff, sobre el control en las
+          carreteras, fue inaugurada en 1920 para la prevención de todo tipo de
+          incidentes que tengan que ver con la carretera, esta división se
+          encarga para ayudar a los sherif como bien he comentado antes, también
+          para tener a los ciudadanos lo más protegidos posible y por último
+          para poder detener a todos los delincuentes que se puedan, esta
+          división hoy en día tiene mucha variedad de delitos de los cuales se
+          encarga.
+          <br />
+          <br />
+          La capacidad que nos aporta el Metropolitan Patrol Department es,
+          todas las rutas tanto como carreteras como sub carreteras, tanto como
+          carreteras urbanas y carreteras secundarias. Esta división colabora
+          con la Metropolitan Patrol Department en caso de ser necesario, esta
+          división es la principal en encargarse u investigar los delitos al
+          volante, pero también se involucran en operaciones donde se les
+          requiera su ayuda, es decir, en persecuciones donde el vehículo del
+          delincuente corre a unas velocidades las cuales un patrulla normal no
+          pueda seguirlo, o también se encarga de intervenciones de las cuales
+          sean de difícil dificultad transitar por esas vías.
+          <br />
+          <br />
+          Dicho departamento también tendrá una “academia” para todo aquel
+          sheriff que no esté curtido en el mundo de la conducción, así
+          brindando la mano a aquellos no tan experimentados, en esta misma se
+          le enseñara a trazar, comportamientos de los vehículos, distancia
+          según las circunstancias, respuesta rápida.
+          <br />
+          <br />
+        </p>
+        <div class="fila">
+          <!-- Intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <br />
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>Coche</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-traffic-light"></i>
+                <span>Trafico</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-handcuffs"></i>
+                <span>Detener</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion Funciones -->
+    <section id="funciones" class="proyectos">
+      <div class="contenido-seccion">
+        <h2>Funciones y deberes</h2>
+        <div class="imagenes">
+          <div class="proyecto">
+            <a href="javascript:abrir1()">
+              <img src="./img/Accidente.png" alt="Transversal" />
+              <div class="overlay">
+                <h3>Investigacion del accidente</h3>
+                <p>Investigar un accidente</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="javascript:abrir2()">
+              <img src="./img/VehiculoComerciales.png" alt="Sintesis" />
+              <div class="overlay">
+                <h3>Control de vehicuos comerciales</h3>
+                <p>Controlar vehiculos comerciales</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="javascript:abrir3()">
+              <img src="./img/RespuestaEmergencia.png" alt="Robot" />
+              <div class="overlay">
+                <h3>Respuesta de emergencia</h3>
+                <p>Responder una emegrencia</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="javascript:abrir4()">
+              <img src="./img/ZonasRurales.png" alt="Robot" />
+              <div class="overlay">
+                <h3>Cumplimiento de la ley</h3>
+                <p>Obedecer la ley</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="javascript:abrir5()">
+              <img src="./img/ParadaDeTrafico.png" alt="Robot" />
+              <div class="overlay">
+                <h3>Mantenimiento</h3>
+                <p>Mantener todo en regla</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="javascript:abrir6()">
+              <img src="./img/ParadaDeTrafico.png" alt="Robot" />
+              <div class="overlay">
+                <h3>Control de trafico</h3>
+                <p>Controlar todo el trafico</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="javascript:abrir7()">
+              <img src="./img/ControlInterurbano.png" alt="Robot" />
+              <div class="overlay">
+                <h3>Control Interurbano</h3>
+                <p>Controlar todo lo interurbano</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="javascript:abrir8()">
+              <img src="./img/Operaciones.png" alt="Robot" />
+              <div class="overlay">
+                <h3>Operaciones de ambito especial</h3>
+                <p>Hacer todas las operaciones de ambito especial</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Para ventana flotante 1 -->
+    <div class="ventana" id="vent1">
+      <div id="cerrar">
+        <a href="javascript:cerrar1()">
+          <img src="./img/cancelar.png" alt="" />
+        </a>
+      </div>
+      <h1>Investigacion del accidente</h1>
+      <br />
+      <p>
+        Recopilacion de pruebas para determinar la causa de un accidente vial.
+        <img src="./img/Accidente.png" alt="" class="transversal1" />
+      </p>
+    </div>
+    <!-- Para ventana flotante 2 -->
+    <div class="ventana" id="vent2">
+      <div id="cerrar">
+        <a href="javascript:cerrar2()">
+          <img src="./img/cancelar.png" alt="" />
+        </a>
+      </div>
+      <h1>Control de vehiculos comerciales</h1>
+      <br />
+      <p>
+        Hacer cumplir las leyes de carreteras relacionadas con el transporte
+        comercial, incluidos los límites de peso y las normas sobre materiales
+        peligrosos.
+        <img src="./img/VehiculoComerciales.png" alt="" class="red" />
+      </p>
+    </div>
+    <!-- Para ventana flotante 3 -->
+    <div class="ventana" id="vent3">
+      <div id="cerrar">
+        <a href="javascript:cerrar3()">
+          <img src="./img/cancelar.png" alt="" />
+        </a>
+      </div>
+      <h1>Respuesta de emergencia</h1>
+      <br />
+      <p>
+        Asegurar el lugar de un accidente de tráfico mediante el uso de conos y
+        bengalas, así como brindar primeros auxilios a los heridos.
+        <img src="./img/RespuestaEmergencia.png" alt="" class="transversal1" />
+      </p>
+    </div>
+    <!-- Para ventana flotante 4-->
+    <div class="ventana" id="vent4">
+      <div id="cerrar">
+        <a href="javascript:cerrar4()">
+          <img src="./img/cancelar.png" alt="" />
+        </a>
+      </div>
+      <h1>Cumplimiento de la ley</h1>
+      <br />
+      <p>
+        Ayudar a la policía local en zonas rurales y estar atento a infracciones
+        no de tráfico.
+        <img src="./img/ZonasRurales.png" alt="" class="robot1" />
+      </p>
+    </div>
+    <!-- Para ventana flotante 5 -->
+    <div class="ventana" id="vent5">
+      <div id="cerrar">
+        <a href="javascript:cerrar5()">
+          <img src="./img/cancelar.png" alt="" />
+        </a>
+      </div>
+      <h1>Mantenimiento</h1>
+      <br />
+      <p>
+        Observar e informar daños a las carreteras y realizar estudios
+        apresurados de las carreteras después de desastres o el paso de
+        inclemencias del tiempo.
+        <img src="./img/ParadaDeTrafico.png" alt="" class="robot1" />
+      </p>
+    </div>
+    <!-- Para ventana flotante 6 -->
+    <div class="ventana" id="vent6">
+      <div id="cerrar">
+        <a href="javascript:cerrar6()">
+          <img src="./img/cancelar.png" alt="" />
+        </a>
+      </div>
+      <h1>Control de trafico</h1>
+      <br />
+      <p>
+        Hacer cumplir las leyes y reglamentos destinados a mejorar la seguridad
+        del tráfico , como los límites de velocidad.
+        <img src="./img/ParadaDeTrafico.png" alt="" class="robot1" />
+      </p>
+    </div>
+    <!-- Para ventana flotante 7 -->
+    <div class="ventana" id="vent7">
+      <div id="cerrar">
+        <a href="javascript:cerrar7()">
+          <img src="./img/cancelar.png" alt="" />
+        </a>
+      </div>
+      <h1>Control interurbano</h1>
+      <br />
+      <p>
+        Realizar controles en puntos estratégicos para la caza de sujetos en
+        Cod-9, posesión de estupefacientes, posesión de cualquier armamento no
+        lícito, blanqueo de capital, controlar las carreras ilegales y cualquier
+        actuación fuera de los márgenes legales que interfiera directamente con
+        el buen uso de las vías.
+        <img src="./img/ControlInterurbano.png" alt="" class="robot1" />
+      </p>
+    </div>
+    <!-- Para ventana flotante 8 -->
+    <div class="ventana" id="vent8">
+      <div id="cerrar">
+        <a href="javascript:cerrar8()">
+          <img src="./img/cancelar.png" alt="" />
+        </a>
+      </div>
+      <h1>Operaciones de ambito especial</h1>
+      <br />
+      <p>
+        Cuando la Metropolitan Patrol Department se le encomienda una operación
+        de ámbito especial, como puede ser el apoyo de otra entidad estatal o
+        similares, se pedirá la asistencia de todos los miembros de la
+        Metropolitan Patrol Department (que se encuentren disponibles en ese
+        momento) y se les pedirá que se vayan a sala de reuniones para hablar
+        sobre el tema de la operación que se va a tratar en ese mismo instante,
+        una vez todos en la sala de reuniones se procederá a explicar sobre qué
+        va la operación, lo que se habrá de hacer (como actuar), y qué rol va a
+        coger cada persona, después de hacer todo eso y que ya esté todo
+        organizado se dará comienzo a realizar esta operación.
+        <img src="./img/Operaciones.png" alt="" class="robot1" />
+      </p>
+    </div>
+
+    <!-- Slider Jerarquia -->
+    <div id="jerarquia" class="contenedor">
+      <div class="slider-">
+        <div class="sliderPunto" style="background-color: white">
+          <section></section>
+        </div>
+        <div class="sliderPunto">
+          <section></section>
+        </div>
+        <div class="sliderPunto">
+          <section></section>
+        </div>
+        <div class="sliderPunto">
+          <section></section>
+        </div>
+        <div class="sliderPunto">
+          <section></section>
+        </div>
+        <div class="sliderPunto">
+          <section></section>
+        </div>
+      </div>
+
+      <div class="slider-contenedor">
+        <div class="contenido-slider">
+          <section>
+            <div class="Jerarquia">
+              <h1 class="jerarquia">
+                Jerarquía De la división (Metropolitan Patrol Department)
+              </h1>
+            </div>
+            <br />
+            <br />
+            <h4 class="piloto">Piloto commander</h4>
+            <br />
+            <br />
+            <p>
+              Es el encargado de toda la división, su función será revisar todo
+              lo relacionado dentro de la misma y dar la cara por ella. [Plaza
+              limite 1]
+            </p>
+          </section>
+        </div>
+        <div class="contenido-slider">
+          <section>
+            <div class="Jerarquia">
+              <h1 class="jerarquia">
+                Jerarquía De la división (Metropolitan Patrol Department)
+              </h1>
+            </div>
+            <br />
+            <br />
+            <h4 class="piloto">Piloto supervisor</h4>
+            <br />
+            <br />
+            <p>
+              Será el encargado de ayudar al piloto commander, asi ayudando con
+              el adiestramiento de los cabos, gestionando los controles de
+              tráfico, examinar a los cabos. [Plazas limite 2]
+            </p>
+          </section>
+        </div>
+        <div class="contenido-slider">
+          <section>
+            <div class="Jerarquia">
+              <h1 class="jerarquia">
+                Jerarquía De la división (Metropolitan Patrol Department)
+              </h1>
+            </div>
+            <br />
+            <br />
+            <h4 class="piloto">Piloto experimentado</h4>
+            <br />
+            <br />
+            <p>
+              Este cargo lo obtendrán los curtidos en conducción podrán
+              adiestrar a los cabo y gestionar los controles cuando nadie de un
+              rango mayor dentro de la división se encuentre disponible.
+            </p>
+          </section>
+        </div>
+        <div class="contenido-slider">
+          <section>
+            <div class="Jerarquia">
+              <h1 class="jerarquia">
+                Jerarquía De la división (Metropolitan Patrol Department)
+              </h1>
+            </div>
+            <br />
+            <br />
+            <h4 class="piloto">Piloto</h4>
+            <br />
+            <br />
+            <p>
+              Será el rango más básico, su función será acudir con prioridad a
+              avisos en los que se requiera disponibilidad de la unidad.
+            </p>
+          </section>
+        </div>
+        <div class="contenido-slider">
+          <section>
+            <div class="Jerarquia">
+              <h1 class="jerarquia">
+                Jerarquía De la división (Metropolitan Patrol Department)
+              </h1>
+            </div>
+            <br />
+            <br />
+            <h4 class="piloto">Cabo</h4>
+            <br />
+            <br />
+            <p>
+              Esta será la etapa de la “academia”, en la cual se dedicarán única
+              y exclusivamente a aprender y pasar todas las pruebas.
+            </p>
+          </section>
+        </div>
+        <div class="contenido-slider">
+          <section>
+            <div class="Jerarquia">
+              <h1 class="jerarquia">
+                Jerarquía De la división (Metropolitan Patrol Department)
+              </h1>
+            </div>
+            <br />
+            <br />
+            <h4 class="piloto">Piloto commander</h4>
+            <br />
+            <br />
+            <p>
+              Es el encargado de toda la división, su función será revisar todo
+              lo relacionado dentro de la misma y dar la cara por ella. [Plaza
+              limite 1]
+            </p>
+          </section>
+        </div>
+      </div>
+      <button class="boton-izquierda">&#10094;</button>
+      <button class="boton-derecha">&#10095;</button>
+    </div>
+
+    <!-- Seccion Requisitos -->
+    <section id="requisitos" class="requisitos">
+      <div class="contenido-seccion">
+        <h2>Requisitos para poder acceder a la división</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Esencial</h3>
+            <div class="item izq">
+              <h4>Licencias de conducir</h4>
+              <span class="casa">Licencias</span>
+              <p>
+                Tener todas las licencias de conducir en regla (que son: Coche,
+                Moto, Camion).
+              </p>
+
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Compromiso</h4>
+              <span class="casa">Compromiso con la division</span>
+              <p>
+                Comprometerse con la división (a fin de que cuando se te
+                necesite estar para ayudar a la división).
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Minimo rango</h4>
+              <span class="casa">Tener un minimo de rango</span>
+              <p>Ser como mínimo rango D.S</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Expediente</h4>
+              <span class="casa">Tener un expediente limpio</span>
+              <p>No tener ningún expediente abierto por la IAA</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Examenes</h4>
+              <span class="casa">Examen practico</span>
+              <p>
+                Pasar los exámenes prácticos, los cuales constaran de 1 circuito
+                cronometrado y una simulación de 245-V.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion normativa -->
+    <section id="normativa" class="requisitos2 requisitos">
+      <div class="contenido-seccion">
+        <h2>Normativa</h2>
+        <div class="fila">
+          <div class="col derecha">
+            <h3>Normas basicas</h3>
+            <div class="item der">
+              <h4>Uso de division</h4>
+              <span class="casa">Uso de la division</span>
+              <p>
+                El uso de la división queda restringido única y exclusivamente
+                para combatir los actos delictivos viales.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Patrullaje</h4>
+              <span class="casa">Tipo de patrullaje</span>
+              <p>
+                Todo miembro del departamento a partir de piloto podrá optar a
+                un patrullaje en 15-CHARLES-XX, siempre que un superior apruebe
+                dicho patrullaje.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Beneficio</h4>
+              <span class="casa">Beneficio propio</span>
+              <p>
+                Todo acto realizado para lucrar en beneficio propio o de
+                terceros será castigado con la expulsión de la división,
+                pudiendo ser suspensión temporal o permanente.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Preferencia</h4>
+              <span class="casa"
+                >Preferencia para sacar unidad interceptor</span
+              >
+              <p>
+                Cuando se realice cualquier operación con los interceptor se
+                tendrá en cuenta al rango más alto a nivel interno, más la
+                pertenencia al departamento SRU debido al nivel de entrenamiento
+                en planificación que tiene.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Modificacion</h4>
+              <span class="casa">Modificacion de vehiculos</span>
+              <p>
+                Cualquier modificación no autorizada aplicada en cualquier
+                vehículo interceptor sera motivo para suspensión temporal de la
+                licencia.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Uniforme</h4>
+              <span class="casa">Uniforme Interceptor</span>
+              <p>
+                Una vez se saque la unidad interceptor, la persona que lo lleve
+                tanto la persona que vaya de copiloto tendran que llevar el
+                uniforme de la unidad
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
